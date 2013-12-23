@@ -27,7 +27,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        startService(new Intent(this,FloaterService.class));
+//        startService(new Intent(this,FloaterService.class));
 
         notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
 
@@ -42,7 +42,7 @@ public class MainActivity extends Activity {
 
         notification.defaults = Notification.DEFAULT_ALL;
 
-//        notificationManager.notify(111,notification);
+        notificationManager.notify(111,notification);
         finish();
     }
 

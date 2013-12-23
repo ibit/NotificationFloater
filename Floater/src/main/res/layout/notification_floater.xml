@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:background="@null"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/reminder_layer_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/reminder_bottom_layer"
+            android:layout_width="match_parent"
+            android:background="#FF0"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:background="#f3f3f3"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:orientation="vertical"
+            android:id="@+id/reminder_top_layer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/reminder_in_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IN 45 MINUTES"
+                    android:textColor="@android:color/holo_red_light"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/location"
+                    android:drawablePadding="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/reminder_title_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Design meeting with Ran"
+                    android:textColor="#000"
+                    />
+
+                </LinearLayout>
+
+            <TextView
+                android:id="@+id/reminder_title_big"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Design meeting with Ran"
+                android:textColor="#000"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/reminder_time_from_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11:00 \u2192 09:30"
+                android:textSize="15sp"
+                android:textColor="@android:color/darker_gray"
+                />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/reminder_extra_layer"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f3f3f3"
+        >
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="1"
+            android:textColor="#000"
+            android:padding="20dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textColor="#000"
+            android:text="2"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textColor="#000"
+            android:text="3"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textColor="#000"
+            android:text="4"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+
+</LinearLayout>
